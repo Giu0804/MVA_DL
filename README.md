@@ -16,7 +16,7 @@
 
 - kaggle datasets download -d pranabr0y/celebdf-v2image-dataset -p ~/work/data --unzip (pas utilisé pour le moment)
 
-- kaggle datasets download -d debajyatidey/faceforensics-videos-cropped-faces -p ~/data --unzip
+- kaggle datasets download -d debajyatidey/faceforensics-videos-cropped-faces -p ~/work/data --unzip
 
 - le 2eme telechargement crée 2 dossiers fake et real, je les ai mis dans un dossier nommé Forensics++
 
