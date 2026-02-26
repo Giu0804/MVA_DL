@@ -6,9 +6,13 @@
 - {
   "username": "nom_token",
   "key": "key_token"
-}
+} 
+3) chmod 600 ~/.kaggle/kaggle.json
+
 
 - pip install kaggle (mis dans requirements normalement)
+
+- pip install -r requirements.txt
 
 - kaggle datasets download -d pranabr0y/celebdf-v2image-dataset -p ~/work/data --unzip (pas utilisé pour le moment)
 
