@@ -71,7 +71,14 @@ class Trainer:
             all_labels.extend(labels.cpu().numpy())
             all_preds.extend(preds.cpu().numpy())
             all_probs.extend(probs.detach().cpu().numpy())
-
+            
+            # essayer de faire en sorte que le code ne crash pas : cuda out of memory 
+            del inputs, labels, outputs, loss
+            if self.agda is not None and 'outputs_aug' in locals():
+                del outputs_aug
+        
+        # aussi pour essayer d'éviter un  crash du code
+        torch.cuda.empty_cache()   
         epoch_loss = running_loss / len(self.dataloaders['train'].dataset)
         epoch_acc = accuracy_score(all_labels, all_preds)
         try:
