@@ -51,10 +51,10 @@ chmod 600 ~/.kaggle/kaggle.json
 ```
 
 To download, Forensics++ dataset, run: 
-`kaggle datasets download -d debajyatidey/faceforensics-videos-cropped-faces -p ~/work/data --unzip`
+`kaggle datasets download -d debajyatidey/faceforensics-videos-cropped-faces -p ~/work/MVA_DL/data --unzip`
 
 To download, Celeb DF dataset, run: 
-`kaggle datasets download -d pranabr0y/celebdf-v2image-dataset -p ~/work/data --unzip`
+`kaggle datasets download -d pranabr0y/celebdf-v2image-dataset -p ~/work/MVA_DL/data --unzip`
 
 For Forensics++, there will be two folders: 'fake' and 'real'.  
 Create a 'Forensics++' folder in the data folder and put them inside.  
